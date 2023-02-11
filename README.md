@@ -4,7 +4,7 @@ Email: sreemurthy.a@northeastern.edu
 
 Features:
 
-•	Validations are added for the form
+•	Validations are added for the form.
 •	Regex is used to validate phone number, email and zip code.
 •	Validation are shown in a red color text along with each field and disappear on correcting particular field 
 •	Created a single select list box which has 5 elements
