@@ -23,7 +23,7 @@ function showUP(object, type){
 function showText(){
    
    var eleout=document.getElementById("drinks").value;
-   if(eleout=="tea"){
+   if(eleout=="Java chip"){
        
        document.getElementById("source2").style.display="none";
        document.getElementById("source22").style.display="none";
@@ -37,7 +37,7 @@ function showText(){
        document.getElementById("source11").style.display="block";
        
    }
-   else if(eleout=="coffee"){
+   else if(eleout=="Ice latte"){
        
        document.getElementById("source2").style.display="block";
        document.getElementById("source22").style.display="block";
@@ -51,7 +51,7 @@ function showText(){
        document.getElementById("source44").style.display="none";
        
    }
-   else if(eleout=="coke"){
+   else if(eleout=="Strawberry Frappe"){
        
        document.getElementById("source3").style.display="block";
        document.getElementById("source33").style.display="block";
@@ -64,7 +64,7 @@ function showText(){
        document.getElementById("source44").style.display="none";
        
    }
-   else if(eleout=="soda"){
+   else if(eleout=="Mocha Cookie"){
        
        document.getElementById("source4").style.display="block";
        document.getElementById("source44").style.display="block";
@@ -154,14 +154,14 @@ function validinput(object,type,nameType){
    var j=1;
        function getData(){
            var name = document.getElementById("firstName").value;
-           var ag= document.getElementById("lastName").value;
-           var fn= name + " " + ag;
+           var lm= document.getElementById("lastName").value;
+           var fn= name + " " + lm;
            var ph =document.getElementById("phoneNumber").value;
-           var ema= document.getElementById("emailId").value;
+           var em= document.getElementById("emailId").value;
            var zp = document.getElementById("zipcode").value;
            var com= document.getElementById("comments").value;
            var dd=document.getElementById("drinks").value;
-           var xyys=document.getElementById('comments1').value;
+           var comm=document.getElementById('comments1').value;
            var st1 = document.getElementById("StreetAdress1").value;
            var st2 = document.getElementById("StreetAdress2").value;
            
@@ -173,15 +173,15 @@ function validinput(object,type,nameType){
             var vel1 = checkbox.length>0? checkbox[0].value: '';
 
             var checkbox1 = document.querySelectorAll('input[name="source100"]:checked');
-            var vel11 = checkbox1.length>0? checkbox1[0].value: '';
+            var vel2 = checkbox1.length>0? checkbox1[0].value: '';
 
             
            
-           if (name=="" || ag=="" || ph=="" || ema=="" || zp=="" || vel=="" || vel1=="" || com=="" || dd=="default" || st1 == ""){
-               alert("All fields are mandatory");
+           if (name=="" || lm=="" || ph=="" || em=="" || zp=="" || vel=="" || vel1=="" || com=="" || dd=="default" || st1 == ""){
+               alert("All fields are mandatory!");
            }
-            else if(vel11!='' && xyys==""){
-                alert("All fields are mandatory");
+            else if(vel2!='' && comm==""){
+                alert("All fields are mandatory!");
             }
            else{
            
@@ -189,7 +189,7 @@ function validinput(object,type,nameType){
 
                    var content="";
                
-                   content+="<tr><td>"+name+"</td><td>"+ag+"</td></tr>";
+                   content+="<tr><td>"+name+"</td><td>"+lm+"</td></tr>";
                    
                    
                    
@@ -206,7 +206,7 @@ var cell5 =row.insertCell(4);
 var cell6 =row.insertCell(5);
 cell1.innerHTML = fn;
 cell2.innerHTML = ph;
-cell3.innerHTML = ema;
+cell3.innerHTML = em;
 cell4.innerHTML = zp;
 cell5.innerHTML = st1;
 cell6.innerHTML = st2;
