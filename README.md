@@ -24,4 +24,5 @@ Features:
 Setup:
 
 Open the mainpage.html file on vscode
+
 Run the application with live server (VS Code extension)
